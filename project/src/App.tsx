@@ -1,6 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Twitch, Instagram, Atom as Tiktok, Twitter, Disc as Discord, Heart, Users, Target, Monitor, Gamepad2, Cat, MapPin, Calendar, Crown, Youtube } from 'lucide-react';
+// You can keep the other icons. Just make sure to import them correctly. Check the code for the names and check
+// if there are any deprecated icons from lucide-react, you can replace them with fa-awesome icons to keep the old look.
+// signed by yungjoky ;)
 
+import React, { useState, useEffect } from 'react';
+import { FaTwitch, FaInstagram, FaTiktok, FaTwitter, FaDiscord, FaYoutube, FaHeart, FaUsers, FaGamepad, FaCat, FaMapMarkerAlt, FaCalendarAlt, FaCrown, FaDesktop } from 'react-icons/fa';
+// import { Twitch , Instagram, Atom as Tiktok, Twitter, Disc as Discord, Heart, Users, Target, Monitor, Gamepad2, Cat, MapPin, Calendar, Crown, Youtube } from 'lucide-react';
+import backgroundImage from "./images/backgroundimg.avif"; // Adjust the path as necessary
 function App() {
   const [isLive, setIsLive] = useState(false);
 
@@ -45,7 +50,7 @@ function App() {
       <div 
         className="h-screen bg-cover bg-center relative"
         style={{
-          backgroundImage: 'url("https://images.unsplash.com/photo-1615655406736-b37c4fabf923?auto=format&fit=crop&q=80&w=2940")',
+          backgroundImage: `url(${backgroundImage})`,
           backgroundBlendMode: 'overlay',
           backgroundColor: 'rgba(0, 0, 0, 0.5)',
           backgroundPosition: 'center',
@@ -75,7 +80,7 @@ function App() {
                   <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 </div>
                 <span className="font-bold text-lg">LIVE NOW</span>
-                <Twitch className="w-5 h-5" />
+                <FaTwitch className="w-5 h-5" />
               </a>
             )}
           </div>
@@ -85,17 +90,17 @@ function App() {
       {/* About Section */}
       <div className="container mx-auto px-4 py-16">
         <h2 className="text-4xl font-bold mb-8 flex items-center gap-2">
-          <Heart className="text-purple-500" /> About Nicole
+          <FaHeart className="text-purple-500" /> About Nicole
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 items-start">
           <div className="space-y-4">
-            <InfoItem icon={Calendar} text="25 years old" />
-            <InfoItem icon={MapPin} text="Bulgaria, Sofia" />
-            <InfoItem icon={Cat} text="Pet: Cookie (She's a baddie)" />
-            <InfoItem icon={Gamepad2} text="Started gaming at 15, first game was League" />
+            <InfoItem icon={FaCalendarAlt} text="25 years old" />
+            <InfoItem icon={FaMapMarkerAlt} text="Bulgaria, Sofia" />
+            <InfoItem icon={FaCat} text="Pet: Cookie (She's a baddie)" />
+            <InfoItem icon={FaGamepad} text="Started gaming at 15, first game was League" />
           </div>
           <div className="space-y-4">
-            <h3 className="text-2xl font-semibold mb-4">Games I Play</h3>
+            <h3 className="text-2xl font-semibold mb-4 mt-0">Games I Play</h3>
             <ul className="list-disc list-inside space-y-2">
               <li>Marvel Rivals (Main)</li>
               <li>Overwatch</li>
@@ -113,7 +118,7 @@ function App() {
       <div className="bg-zinc-900 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold mb-8 flex items-center gap-2">
-            <Monitor className="text-purple-500" /> Setup Specs
+            <FaDesktop className="text-purple-500" /> Setup Specs
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div>
@@ -145,7 +150,7 @@ function App() {
         <div className="grid md:grid-cols-2 gap-8">
           <div>
             <h2 className="text-4xl font-bold mb-8 flex items-center gap-2">
-              <Crown className="text-purple-500" /> Chat Rules
+              <FaCrown className="text-purple-500" /> Chat Rules
             </h2>
             <ul className="space-y-4">
               <li className="flex items-center gap-2">
@@ -168,7 +173,7 @@ function App() {
           </div>
           <div>
             <h2 className="text-4xl font-bold mb-8 flex items-center gap-2">
-              <Users className="text-purple-500" /> Partners
+              <FaUsers className="text-purple-500" /> Partners
             </h2>
             <div className="space-y-4">
               <div className="bg-zinc-900 p-6 rounded-lg">
@@ -180,7 +185,7 @@ function App() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-purple-600 px-4 py-2 rounded-lg hover:bg-purple-700 transition"
                 >
-                  <Discord size={20} />
+                  <FaDiscord size={20} />
                   Join Community
                 </a>
               </div>
@@ -197,12 +202,12 @@ function App() {
       <footer className="bg-zinc-900 py-8">
         <div className="container mx-auto px-4">
           <div className="flex justify-center gap-6">
-            <SocialLink icon={Twitch} href="https://www.twitch.tv/qtsnac" />
-            <SocialLink icon={Instagram} href="https://www.instagram.com/qtsnac/" />
-            <SocialLink icon={Tiktok} href="https://www.tiktok.com/@qtsnacttv" />
-            <SocialLink icon={Twitter} href="https://www.x.com/qtsnac" />
-            <SocialLink icon={Discord} href="https://discord.gg/5jNGHcWuFX" />
-            <SocialLink icon={Youtube} href="https://www.youtube.com/@qtsnac" />
+            <SocialLink icon={FaTwitch} href="https://www.twitch.tv/qtsnac" />
+            <SocialLink icon={FaInstagram} href="https://www.instagram.com/qtsnac/" />
+            <SocialLink icon={FaTiktok} href="https://www.tiktok.com/@qtsnacttv" />
+            <SocialLink icon={FaTwitter} href="https://www.x.com/qtsnac" />
+            <SocialLink icon={FaDiscord} href="https://discord.gg/5jNGHcWuFX" />
+            <SocialLink icon={FaYoutube} href="https://www.youtube.com/@qtsnac" />
           </div>
         </div>
       </footer>

@@ -1,8 +1,8 @@
 import { createClient } from "npm:@supabase/supabase-js@2.39.7";
 
-const TWITCH_CLIENT_ID = "gf657xudfppjr26jc421hi0xn5g9o7";
-const TWITCH_CLIENT_SECRET = "brqgfx6g44irehbpzxo34u7bfronre";
-const TWITCH_USERNAME = "qtsnac";
+const TWITCH_CLIENT_ID = Deno.env.get("TWITCH_CLIENT_ID") || "";
+const TWITCH_CLIENT_SECRET = Deno.env.get("TWITCH_CLIENT_SECRET") || "";
+const TWITCH_USERNAME = Deno.env.get("TWITCH_USERNAME") || "";
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
@@ -11,7 +11,7 @@ const corsHeaders = {
 };
 
 async function getAccessToken() {
-  if (!TWITCH_CLIENT_ID || !TWITCH_CLIENT_SECRET) {
+  if (!TWITCH_CLIENT_ID || !TWITCH_CLIENT_SECRET || !TWITCH_USERNAME) {
     throw new Error("Missing Twitch credentials");
   }
 
