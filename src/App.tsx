@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitch, faInstagram, faYoutube, faDiscord, faTiktok, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faHeart, faUsers, faDesktop, faGamepad, faCat, faLocationDot, faCalendar, faCrown } from '@fortawesome/free-solid-svg-icons';
-import backgroundImage from "./images/backgroundimage.avif";
+import backgroundImage from "./images/backgroundimage.png";
 function App() {
   const [isLive, setIsLive] = useState(false);
 
