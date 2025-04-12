@@ -217,7 +217,7 @@ This project is under the MIT License.
 
 ## 📬 Support
 
-For support, email fake@fake.com or join our Slack channel.
+For support, join our [Dicord Server](https://discord.com/invite/5jNGHcWuFX).
 
 
 ### 🙌 Acknowledgements
