@@ -213,6 +213,7 @@ This project is under the MIT License.
   npm install
   npm run dev
   ```
+</details>
 
 ## 📬 Support
 
