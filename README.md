@@ -217,7 +217,7 @@ This project is under the MIT License.
 
 ## 📬 Support
 
-For support, join our [Dicord Server](https://discord.com/invite/5jNGHcWuFX).
+For support, join our [Discord Server](https://discord.com/invite/5jNGHcWuFX).
 
 
 ### 🙌 Acknowledgements
