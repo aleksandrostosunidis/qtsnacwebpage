@@ -231,4 +231,4 @@ For support, join our [Discord Server](https://discord.com/invite/5jNGHcWuFX).
 ## 💡 Authors
 
 Made with ❤️ by Alexandros – QA Engineer & C# Developer
-- [@aleksandrotosunidis](https://github.com/aleksandrostosunidis)
+- [@aleksandrostosunidis](https://github.com/aleksandrostosunidis)
