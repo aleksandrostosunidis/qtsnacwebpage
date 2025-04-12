@@ -134,7 +134,7 @@ GET /api/twitch-status?channel=qtsnac
 ```
 
 ```bash
-fetch("https://ymushlqpvmjqjewuozpz.supabase.co/functions/v1/twitch-status?channel=qtsnac")
+fetch("https://supabase-url/functions/v1/twitch-status?channel=qtsnac")
   .then(res => res.json())
   .then(data => console.log(data));
 ```
