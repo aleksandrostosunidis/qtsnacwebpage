@@ -2,7 +2,7 @@ import { createClient } from "npm:@supabase/supabase-js@2.39.7";
 import "npm:dotenv@16.4.5/config";
 
 const TWITCH_CLIENT_ID = Deno.env.get("gf657xudfppjr26jc421hi0xn5g9o7");
-const TWITCH_CLIENT_SECRET = Deno.env.get("iaz1blfcfphhjlvu4gzevbl6h3qcdq");
+const TWITCH_CLIENT_SECRET = Deno.env.get("cm2vzul2lpnxcte77oqs8v3sbuim0j");
 const TWITCH_USERNAME = Deno.env.get("alethiatv");
 
 const corsHeaders = {
