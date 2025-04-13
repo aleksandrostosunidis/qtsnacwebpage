@@ -1,9 +1,9 @@
 import { createClient } from "npm:@supabase/supabase-js@2.39.7";
 import "npm:dotenv@16.4.5/config";
 
-const TWITCH_CLIENT_ID = Deno.env.get("TWITCH_CLIENT_ID");
-const TWITCH_CLIENT_SECRET = Deno.env.get("TWITCH_CLIENT_SECRET");
-const TWITCH_USERNAME = Deno.env.get("TWITCH_USERNAME");
+const TWITCH_CLIENT_ID = Deno.env.get("27cw12h6hqfnmzyz9g9lrhbczmx045");
+const TWITCH_CLIENT_SECRET = Deno.env.get("ird56ke9qfd8043ooqcuagndihb10z");
+const TWITCH_USERNAME = Deno.env.get("qtsnac");
 
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
